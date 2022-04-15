@@ -7,6 +7,8 @@ from tempfile import mkdtemp
 from werkzeug.security import check_password_hash, generate_password_hash
 from helpers import apology, login_required, lookup, usd
 
+
+
 # Configure application
 app = Flask(__name__)
 
@@ -40,12 +42,25 @@ def after_request(response):
 @app.route("/")
 def index():
     """Show portfolio of stocks"""
+    connection = sqlite3.connect("finance.db")
+    crsr = connection.cursor()
+    crsr.execute("INSERT INTO transactions (user_id, symbol, shares, price) VALUES(1, 2, 3, 4)")
+    answer = list(crsr.execute(f'SELECT * from transactions'))
+    connection.commit()
+    connection.close()
+    print(answer)
     return render_template('index.html')
 
 
-@app.route("/buy", methods=["GET", "POST"])
-def buy():
+@app.route("/choose", methods=["GET", "POST"])
+def choose():
     """Buy shares of stock"""
+    connection = sqlite3.connect("finance.db")
+    crsr = connection.cursor()
+    answer = crsr.execute(f'SELECT * FROM transactions')
+    connection.commit()
+    connection.close()
+    print(answer)
     return apology("TODO")
 
 
