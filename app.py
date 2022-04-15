@@ -1,5 +1,4 @@
 import os
-
 import sqlite3
 from sqlite3 import Error
 from flask import Flask, flash, redirect, render_template, request, session
@@ -29,7 +28,6 @@ db = None#SQL("sqlite:///sample.db")
 # if not os.environ.get("API_KEY"):
 #     raise RuntimeError("API_KEY not set")
 
-
 @app.after_request
 def after_request(response):
     """Ensure responses aren't cached"""
@@ -42,7 +40,7 @@ def after_request(response):
 @app.route("/")
 def index():
     """Show portfolio of stocks"""
-    return apology("TODO")
+    return render_template('index.html')
 
 
 @app.route("/buy", methods=["GET", "POST"])
@@ -55,8 +53,6 @@ def buy():
 def history():
     """Show history of transactions"""
     return apology("TODO")
-
-
 
 
 @app.route("/quote", methods=["GET", "POST"])
