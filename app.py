@@ -64,10 +64,9 @@ def choose():
     return apology("TODO")
 
 
-@app.route("/history")
-def history():
-    """Show history of transactions"""
-    return apology("TODO")
+@app.route("/aboutus")
+def aboutus():
+    return render_template('aboutus.html')
 
 
 @app.route("/quote", methods=["GET", "POST"])
