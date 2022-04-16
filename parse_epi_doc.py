@@ -4,17 +4,15 @@ import xml.etree.ElementTree as ET
 import os
 import sqlite3
 import pandas as pd
+import epidoc
 
 def parseXML(xmlfile):
-    # create element tree object
-    tree = ET.parse(xmlfile)
-    root = tree.getroot()
-    newsitems = []
-    for item in root.findall('./channel/item'):
-        news = {}
-        newsitems.append(news)
-    return newsitems
-
+    # Structure of info, XMLFile Name
+    info = []
+    info.append(xmlfile)
+    with open("XML/test.xml") as f:
+        doc = epidoc.load(f)
+    print(doc.title)
 
 def savetoCSV(newsitems, filename):
     # specifying the fields for csv file
@@ -33,8 +31,9 @@ def convert_to_db(csv):
     con.close()
 
 if __name__ == "__main__":
-    csv = 'translations.csv'
-    for filename in os.listdir("/XML"):
-        cur_translation = parseXML(filename)
-        savetoCSV(cur_translation, csv)
-    convert_to_db(csv)
+    # csv = 'translations.csv'
+    # for filename in os.listdir("/XML"):
+    #     cur_translation = parseXML(filename)
+    #     savetoCSV(cur_translation, csv)
+    # convert_to_db(csv)
+    parseXML('test.xml')
