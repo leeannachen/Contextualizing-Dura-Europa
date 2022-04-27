@@ -65,9 +65,23 @@ def choose():
     return apology("TODO")
 
 
-@app.route("/aboutus")
+@app.route("/about")
 def aboutus():
-    return render_template('aboutus.html')
+    return render_template('about.html')
+
+
+@app.route("/about")
+def about():
+    return render_template('about.html')
+
+@app.route("/gate")
+def gate():
+    return render_template('gate.html')
+
+
+@app.route("/temple")
+def temple():
+    return render_template('temple.html')
 
 
 @app.route("/quote", methods=["GET", "POST"])

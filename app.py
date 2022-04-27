@@ -41,47 +41,38 @@ def after_request(response):
 
 @app.route("/")
 def index():
-    """Show portfolio of stocks"""
-    connection = sqlite3.connect("finance.db")
-    crsr = connection.cursor()
-    crsr.execute("INSERT INTO transactions (user_id, symbol, shares, price) VALUES(1, 2, 3, 4)")
-    answer = list(crsr.execute(f'SELECT * from transactions'))
-    connection.commit()
-    connection.close()
-    print(answer)
+    # """Show portfolio of stocks"""
+    # connection = sqlite3.connect("finance.db")
+    # crsr = connection.cursor()
+    # crsr.execute("INSERT INTO transactions (user_id, symbol, shares, price) VALUES(1, 2, 3, 4)")
+    # answer = list(crsr.execute(f'SELECT * from transactions'))
+    # connection.commit()
+    # connection.close()
+    # print(answer)
     return render_template('index.html')
 
 
 @app.route("/choose", methods=["GET", "POST"])
 def choose():
     """Buy shares of stock"""
-    connection = sqlite3.connect("finance.db")
-    crsr = connection.cursor()
-    answer = crsr.execute(f'SELECT * FROM transactions')
-    connection.commit()
-    connection.close()
-    print(answer)
+    # connection = sqlite3.connect("finance.db")
+    # crsr = connection.cursor()
+    # answer = crsr.execute(f'SELECT * FROM transactions')
+    # connection.commit()
+    # connection.close()
+    # print(answer)
     return apology("TODO")
 
 
-@app.route("/aboutus")
-def aboutus():
-    return render_template('aboutus.html')
+@app.route("/about")
+def about():
+    return render_template('about.html')
+
+@app.route("/gate")
+def gate():
+    return render_template('gate.html')
 
 
-@app.route("/quote", methods=["GET", "POST"])
-def quote():
-    """Get stock quote."""
-    return apology("TODO")
-
-
-@app.route("/register", methods=["GET", "POST"])
-def register():
-    """Register user"""
-    return apology("TODO")
-
-
-@app.route("/sell", methods=["GET", "POST"])
-def sell():
-    """Sell shares of stock"""
-    return apology("TODO")
+@app.route("/temple")
+def temple():
+    return render_template('temple.html')
