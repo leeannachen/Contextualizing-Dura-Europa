@@ -63,7 +63,6 @@ def choose():
     # print(answer)
     return apology("TODO")
 
-
 @app.route("/about")
 def about():
     return render_template('about.html')
@@ -77,5 +76,5 @@ def temple():
     return render_template('temple.html')
 
 @app.route("/metadata")
-def gate():
+def metadata():
     return render_template('metadata.html')

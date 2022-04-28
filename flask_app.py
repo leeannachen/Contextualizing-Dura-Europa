@@ -75,7 +75,7 @@ def about():
     return render_template('about.html')
 
 @app.route("/metadata")
-def about():
+def metadata():
     return render_template('metadata.html')
 
 
