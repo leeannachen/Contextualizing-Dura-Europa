@@ -74,6 +74,11 @@ def aboutus():
 def about():
     return render_template('about.html')
 
+@app.route("/metadata")
+def about():
+    return render_template('metadata.html')
+
+
 @app.route("/gate")
 def gate():
     return render_template('gate.html')

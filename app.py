@@ -72,7 +72,10 @@ def about():
 def gate():
     return render_template('gate.html')
 
-
 @app.route("/temple")
 def temple():
     return render_template('temple.html')
+
+@app.route("/metadata")
+def gate():
+    return render_template('metadata.html')
