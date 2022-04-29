@@ -63,7 +63,7 @@ def choose():
     # print(answer)
     return apology("TODO")
 
-@app.route("/about")
+@app.route("/about",  methods=["GET", "POST"])
 def about():
     return render_template('about.html')
 

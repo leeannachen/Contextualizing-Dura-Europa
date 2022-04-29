@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Metadata
+    <!-- {{translations[i].block}} -->
+{% endblock %}
+
+{% block main %}
+<!-- {%for i in range(0, len)%} -->
+    <main class="container-fluid py-3 text-center">
+        <!-- {{translations[i].title}} -->
+        Block D13
+    </main>
+    
+    <div class="container">
+        <div class="row align-items-start">
+            <div class="col">
+                <p>Inscription: </p>
+                <!-- <p>Inscription: {{translations[i].inscription}}</p> -->
+            </div>
+            <div class="col">
+                <p>Translation: </p>
+                <!-- <p>Translation: {{translations[i].translation}}</p> -->
+            </div>
+        </div>
+        <div class="row align-items-start">
+            <div class="col">
+                <p>Source: </p>
+                <!-- <p>Inscription: {{translations[i].source}}</p> -->
+            </div>
+            <div class="col">
+                <p>Period: </p>
+                <!-- <p>Translation: {{translations[i].period}}</p> -->
+            </div>
+        </div>
+        <div class="row align-items-start">
+            <div class="col">
+                <p>Letter Height: </p>
+                <!-- <p>Inscription: {{translations[i].height}}</p> -->
+            </div>
+        </div>
+        <div class="row align-items-start">
+            <div class="col">
+                <p>Other Notes: </p>
+                <!-- <p>Inscription: {{translations[i].notes}}</p> -->
+            </div>
+        </div>
+    </div>
+<!-- {%endfor%} -->
+{% endblock %}

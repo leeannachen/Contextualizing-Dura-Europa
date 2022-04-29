@@ -26,3 +26,7 @@ a:-webkit-any-link {
     text-decoration: none !important;
     color: black;
 }
+
+.metadata p{
+    text-align: left !important;
+}
