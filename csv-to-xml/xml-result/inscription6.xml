@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve" xml:lang="en">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>H.11</title>
+			</titleStmt>
+			<publicationStmt>
+				<authority>Yale University</authority>
+				<idno type="H.11"/>
+			</publicationStmt>
+			<sourceDesc>
+				<msDesc>
+					<msIdentifier>
+						<repository/>
+						<idno>inventory number</idno>
+					</msIdentifier>
+					<physDesc>
+						<objectDesc>
+							<supportDesc>
+								<support>
+									description of object/monument (likely to include 
+									<material/>
+									 and 
+									<objectType/>
+									 information, 
+									<dimensions/>
+									, etc.)
+								</support>
+							</supportDesc>
+							<layoutDesc>
+								<layout>description of text field/campus</layout>
+							</layoutDesc>
+						</objectDesc>
+						<handDesc>
+							<handNote>
+								description of letteres, possibly including 
+								<height>letter-heights</height>
+							</handNote>
+						</handDesc>
+					</physDesc>
+					<history>
+						<origin>
+							<origPlace>Place of origin</origPlace>
+							<origDate>Date of origin</origDate>
+						</origin>
+						<provenance type="found">Findspot and circumstances/context</provenance>
+						<provenance type="observed">Modern location(s) (if different from repository, above)</provenance>
+					</history>
+				</msDesc>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+	<facsimile>
+		<graphic url="photograph of text or monument"/>
+	</facsimile>
+	<text>
+		<body>
+			<div type="No. ">
+				<p>H.11</p>
+			</div>
+			<div type="Inscription">
+				<p>[μν]ῃσθεἰς Τἰμαρχος</p>
+			</div>
+			<div type="Transcription">
+				<p>mnaestheiaes Timarkhos</p>
+			</div>
+			<div type="Translation">
+				<p>Timarchos, may you remember.</p>
+			</div>
+			<div type="Source">
+				<p>Inside temple</p>
+			</div>
+			<div type="Block #">
+				<p></p>
+			</div>
+			<div type="Letter Height">
+				<p></p>
+			</div>
+			<div type="Bibliography">
+				<p></p>
+			</div>
+			<div type="Notes">
+				<p></p>
+			</div>
+		</body>
+	</text>
+</TEI>
