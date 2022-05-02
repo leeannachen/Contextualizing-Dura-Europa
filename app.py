@@ -15,7 +15,6 @@ import sqlite3
 import pandas as pd
 import sqlite3
 
-num = 1
 # Configure application
 app = Flask(__name__)
 
@@ -81,55 +80,44 @@ def gate():
 
 @app.route("/temple", methods=["GET", "POST"])
 def temple():
+    global first
     if request.method == "POST":
-        global first
-        con = sqlite3.connect("temple.db")
+        con = sqlite3.connect("translations.db")
         cursor_object = con.cursor()
-        if first:
-            with open('temple.csv', 'r') as f:
-                df = pd.read_csv('temple.csv')
-                df.columns = df.columns.str.strip()
-                # df.to_sql("templeTable", con)
-                # con.close()
-            first = False
-        if request.method == "POST":
-            answer = cursor_object.execute("SELECT Translation FROM templeTable;")
-            results = []
-            for result in answer:
-                if result != None:
-                    if result != 'None':
-                        results.append(result)
-        print(results)
+        script = "SELECT * FROM temple WHERE No = ?"
+        answer = cursor_object.execute(script, (str(request.form.get("block").strip()),))
+        keys = ['', 'no','inscription', 'transcription','translation','source','image', 'period', 'block' ,'height', 'bibliography', 'app', 'notes']
+        dic = dict()
+        results = []
+        for info in answer:
+            i = 0
+            dic = dict()
+            for piece in info:
+                if i != 0:
+                    dic[keys[i]] = piece
+                i+=1
+            results.append(dic)
         return render_template('metadata.html', translations=results)
     else:
-        return render_template('temple.html', translations=[])
+        con = sqlite3.connect("translations.db")
+        cursor_object = con.cursor()
+        answer = cursor_object.execute("SELECT No , Translation FROM temple;")
+        results = []
+        for result in answer:
+            if result != None:
+                if str(result) != '(None, None)':
+                    results.append(list(result))
+        return render_template('temple.html', translations=results)
+
 @app.route("/metadata", methods=["GET", "POST"])
 def metadata():
-    global first
-    con = sqlite3.connect("temple.db")
-    cursor_object = con.cursor()
-    if first:
-        with open('temple.csv', 'r') as f:
-            df = pd.read_csv('temple.csv')
-            df.columns = df.columns.str.strip()
-            df.to_sql("templeTable", con)
-            con.close()
-        first = False
-    if request.method == "POST":
-        answer = cursor_object.execute("SELECT Translation FROM Temple;")
-        print(answer)
-        pass
-    return render_template('metadata.html', translations=[{'image':"../static/images/Kaitlyn.jpeg", 'inscription':"Inscription",
-                                            'transcription': "Transcription", 'translation':"Translation",'source':"Translation Source", 'period': "Period", 'block':"Block" ,
-                                             'height':"Letter Height", 'bibliography':"Bibliography", 'app':"Apparatus",'notes':"Commentary"},
-                                            {'image': "../static/images/Kaitlyn.jpeg",
-                                            'inscription': "Inscription2",'transcription': "Transcription2",
-                                            'translation': "Translation2", 'source': "Translation Source2",
-                                            'period': "Period2", 'block': "Block2",
-                                            'height': "Letter Height2", 'bibliography': "Bibliography2",
-                                            'app': "Apparatus2", 'notes': "Commentary2"}
-                                            ])
-
-# @app.route("/metadata")
-# def metadata():
-#     return render_template('metadata.html')
+    return render_template('metadata.html', translations=[])#translations=[{'image':"../static/images/Kaitlyn.jpeg", 'inscription':"Inscription",
+                                            # 'transcription': "Transcription", 'translation':"Translation",'source':"Translation Source", 'period': "Period", 'block':"Block" ,
+                                            #  'height':"Letter Height", 'bibliography':"Bibliography", 'app':"Apparatus",'notes':"Commentary"},
+                                            # {'image': "../static/images/Kaitlyn.jpeg",
+                                            # 'inscription': "Inscription2",'transcription': "Transcription2",
+                                            # 'translation': "Translation2", 'source': "Translation Source2",
+                                            # 'period': "Period2", 'block': "Block2",
+                                            # 'height': "Letter Height2", 'bibliography': "Bibliography2",
+                                            # 'app': "Apparatus2", 'notes': "Commentary2"}
+                                            # ])
