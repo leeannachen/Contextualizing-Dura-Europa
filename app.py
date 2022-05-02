@@ -49,7 +49,7 @@ def after_request(response):
 @app.route("/")
 def index():
     # """Show portfolio of stocks"""
-    # connection = sqlite3.connect("finance.db")
+    # connection = sqlite3.connect("reference.db")
     # crsr = connection.cursor()
     # crsr.execute("INSERT INTO transactions (user_id, symbol, shares, price) VALUES(1, 2, 3, 4)")
     # answer = list(crsr.execute(f'SELECT * from transactions'))
@@ -62,7 +62,7 @@ def index():
 @app.route("/choose", methods=["GET", "POST"])
 def choose():
     """Buy shares of stock"""
-    # connection = sqlite3.connect("finance.db")
+    # connection = sqlite3.connect("reference.db")
     # crsr = connection.cursor()
     # answer = crsr.execute(f'SELECT * FROM transactions')
     # connection.commit()
