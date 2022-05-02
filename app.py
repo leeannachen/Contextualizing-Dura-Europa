@@ -99,6 +99,7 @@ def temple():
                 if result != None:
                     if result != 'None':
                         results.append(result)
+        print(results)
         return render_template('metadata.html', translations=results)
     else:
         return render_template('temple.html', translations=[])
