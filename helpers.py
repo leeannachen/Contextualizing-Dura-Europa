@@ -62,3 +62,5 @@ def lookup(symbol):
 def usd(value):
     """Format value as USD."""
     return f"${value:,.2f}"
+
+# Photo? Inscription	Transcription	Translation	Source Period	Block #	Letter Height	Bibliography	Apparatus	Commentary
