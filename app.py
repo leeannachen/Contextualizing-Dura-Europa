@@ -77,9 +77,17 @@ def temple():
 
 @app.route("/metadata")
 def metadata():
-    return render_template('metadata.html', translation=[{'image':"../static/images/Kaitlyn.jpeg", 'inscription':"Inscription",
-                                            'transcrition': "Transcription", 'source':"Translation Source", 'period': "Period", 'block':"Block" ,
-                                             'height':"Letter Height", 'bibliography':"Bibliography", 'app':"Apparatus",'notes':"Commentary"}])
+    return render_template('metadata.html', translations=[{'image':"../static/images/Kaitlyn.jpeg", 'inscription':"Inscription",
+                                            'transcription': "Transcription", 'translation':"Translation",'source':"Translation Source", 'period': "Period", 'block':"Block" ,
+                                             'height':"Letter Height", 'bibliography':"Bibliography", 'app':"Apparatus",'notes':"Commentary"},
+                                            {'image': "../static/images/Kaitlyn.jpeg",
+                                            'inscription': "Inscription2",
+                                                           'transcription': "Transcription2",
+                                                           'translation': "Translation2", 'source': "Translation Source2",
+                                                           'period': "Period2", 'block': "Block2",
+                                                           'height': "Letter Height2", 'bibliography': "Bibliography2",
+                                                           'app': "Apparatus2", 'notes': "Commentary2"}
+                                                          ])
 
 # @app.route("/metadata")
 # def metadata():
