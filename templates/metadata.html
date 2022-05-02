@@ -9,7 +9,7 @@
         <a href="/metadata"><img alt="{{ top }}" class="border img-fluid" src="{{translations[0].image}}" title="{{ top }}"></a>
     {% endif %}
 
-    {%for i in range(0, len)%}
+    {%for i in range(0, translations|length)%}
         <div class="container-fluid py-3 text-center bg-light">
             <h3>
                 {{translations[i].inscription}}
