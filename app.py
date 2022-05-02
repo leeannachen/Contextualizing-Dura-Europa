@@ -13,7 +13,6 @@ import xml.etree.ElementTree as ET
 import os
 import sqlite3
 import pandas as pd
-import epidoc
 import sqlite3
 
 num = 1
