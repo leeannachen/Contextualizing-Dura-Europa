@@ -96,6 +96,7 @@ def gate():
                 i+=1
             for j in range(i, len(keys)):
                 dic[keys[i]] = 'No Result'
+            dic['block'] = dic['source']
             results.append(dic)
         print(results)
         return render_template('metadata.html', translations=results)
