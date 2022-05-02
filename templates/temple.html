@@ -5,12 +5,17 @@
 {% endblock %}
 
 {% block main %}
-    <h1>Insert Temple Leaflet.js</h1>
+    <h1 class="p-3">Insert Temple Leaflet.js</h1>
+    <h1>Explore by Translations:</h1>
+    <p>Click on the translation to view more information</p>
+
     <form action="/temple" method="post">
         <div class="form-group">
         {%for i in range(0, translations|length)%}
-        <div class="row p-1">
-            <button class="btn btn-primary"  name="block" type="submit"><h3>{{translations[i].translation}}</h3></button>
+        <div class="row p-2">
+            <div class="col">
+                <button class="btn bg-dark text-white" name="block" style="width: 60vw" type="submit"><h3>{{translations[i].translation}}</h3></button>
+            </div>
         </div>
         {%endfor%}
     </form>

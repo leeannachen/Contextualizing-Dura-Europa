@@ -71,14 +71,10 @@ def about():
 def gate():
     return render_template('gate.html')
 
-@app.route("/temple")
+@app.route("/temple", methods=["GET", "POST"])
 def temple():
     if request.method == "POST":
-        if block is None:
-            return apology("Not valid", 400)
-        else:
-            return render_template(
-                translations=[{'image':"../static/images/Kaitlyn.jpeg", 'inscription':"Inscription",
+        return render_template('metadata.html', translations=[{'image':"../static/images/Kaitlyn.jpeg", 'inscription':"Inscription",
                                             'transcription': "Transcription", 'translation':"Translation",'source':"Translation Source", 'period': "Period", 'block':"Block" ,
                                              'height':"Letter Height", 'bibliography':"Bibliography", 'app':"Apparatus",'notes':"Commentary"},
                                             {'image': "../static/images/Kaitlyn.jpeg",
@@ -87,8 +83,7 @@ def temple():
                                             'period': "Period2", 'block': "Block2",
                                             'height': "Letter Height2", 'bibliography': "Bibliography2",
                                             'app': "Apparatus2", 'notes': "Commentary2"}
-                                            ],
-            )
+                                            ])
     else:
         return render_template('temple.html', translations=[{'image':"../static/images/Kaitlyn.jpeg", 'inscription':"Inscription",
                                             'transcription': "Transcription", 'translation':"Translation",'source':"Translation Source", 'period': "Period", 'block':"Block" ,
