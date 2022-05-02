@@ -108,19 +108,22 @@ def temple():
                                             'height': "Letter Height2", 'bibliography': "Bibliography2",
                                             'app': "Apparatus2", 'notes': "Commentary2"}
                                             ])
-
+first = True
 @app.route("/metadata")
 def metadata():
-    if True:
-        con = sqlite3.connect("temple.db")
-        cursor_object = con.cursor()
+    global first
+    con = sqlite3.connect("temple.db")
+    cursor_object = con.cursor()
+    if first:
         with open('temple.csv', 'r') as f:
             df = pd.read_csv('temple.csv')
             df.columns = df.columns.str.strip()
             df.to_sql("templeTable", con)
             con.close()
+        first = False
     if request.method == "POST":
-        # cursor_object.execute("SELECT * from geeks_demo")
+        answer = cursor_object.execute("SELECT * FROM templeTable WHERE Translation='';")
+        print(answer)
         pass
     return render_template('metadata.html', translations=[{'image':"../static/images/Kaitlyn.jpeg", 'inscription':"Inscription",
                                             'transcription': "Transcription", 'translation':"Translation",'source':"Translation Source", 'period': "Period", 'block':"Block" ,
