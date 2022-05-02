@@ -6,4 +6,19 @@
 
 {% block main %}
     <h1>Insert Gate Leaflet</h1>
+
+    <h1>Explore by Translations:</h1>
+    <p>Click on the translation to view more information on the block it is on.</p>
+
+    <form action="/gate" method="post">
+        <div class="form-group">
+        {%for i in range(0, translations|length)%}
+        <div class="row p-2">
+            <div class="col">
+                <button class="btn bg-black text-white" name="block" value={{translations[i][0]}} style="width: 60vw" type="submit"><h3>{{translations[i][1]}}</h3></button>
+            </div>
+        </div>
+        {%endfor%}
+    </form>
+
 {% endblock %}

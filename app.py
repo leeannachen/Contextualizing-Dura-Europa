@@ -74,22 +74,54 @@ def choose():
 def about():
     return render_template('about.html')
 
-@app.route("/gate")
+@app.route("/gate", methods=["GET", "POST"])
 def gate():
-    return render_template('gate.html')
+    if request.method == "POST":
+        print('made it to post')
+        con = sqlite3.connect("translations2.db")
+        cursor_object = con.cursor()
+        script = "SELECT * FROM gate WHERE No = ?"
+        print(str(request.form.get("block").strip()),)
+        answer = cursor_object.execute(script, (str(request.form.get("block").strip()),))
+        keys = ['', 'no','inscription', 'source', 'image', 'height', 'translation', 'period', 'notes', 'transcription',  'block' , 'bibliography', 'app']
+        results = []
+        for info in answer:
+            print('info is')
+            print(info)
+            i = 0
+            dic = dict()
+            for piece in info:
+                if i != 0:
+                    dic[keys[i]] = piece
+                i+=1
+            for j in range(i, len(keys)):
+                dic[keys[i]] = 'No Result'
+            results.append(dic)
+        print(results)
+        return render_template('metadata.html', translations=results)
+    else:
+        con = sqlite3.connect("translations2.db")
+        cursor_object = con.cursor()
+        answer = cursor_object.execute("SELECT No , Inscription FROM gate;")
+        results = []
+        for result in answer:
+            if result != None:
+                if str(result) != '(None, None)':
+                    results.append(list(result))
+        return render_template('gate.html', translations=results)
 
 @app.route("/temple", methods=["GET", "POST"])
 def temple():
-    global first
     if request.method == "POST":
-        con = sqlite3.connect("translations.db")
+        con = sqlite3.connect("translations2.db")
         cursor_object = con.cursor()
         script = "SELECT * FROM temple WHERE No = ?"
         answer = cursor_object.execute(script, (str(request.form.get("block").strip()),))
         keys = ['', 'no','inscription', 'transcription','translation','source','image', 'period', 'block' ,'height', 'bibliography', 'app', 'notes']
-        dic = dict()
         results = []
         for info in answer:
+            print('info is')
+            print(info)
             i = 0
             dic = dict()
             for piece in info:
@@ -99,7 +131,7 @@ def temple():
             results.append(dic)
         return render_template('metadata.html', translations=results)
     else:
-        con = sqlite3.connect("translations.db")
+        con = sqlite3.connect("translations2.db")
         cursor_object = con.cursor()
         answer = cursor_object.execute("SELECT No , Inscription FROM temple;")
         results = []
