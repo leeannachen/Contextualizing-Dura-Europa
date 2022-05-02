@@ -6,7 +6,7 @@
 
 {% block main %}
     {% if translations[0].image != "unknown" %}
-        <a href="/metadata"><img alt="{{ top }}" class="border img-fluid" src="{{translations[0].image}}" title="{{ top }}"></a>
+        <img alt="{{ top }}" class="img-fluid p-3" style="height: 500px" src="{{translations[0].image}}" title="{{ top }}">
     {% endif %}
 
     {%for i in range(0, translations|length)%}
