@@ -81,6 +81,6 @@ def temple():
                                              "Transcription", "Translation Source", "Period","Block" ,
                                              "Letter Height","Bibliography","Apparatus","Commentary"])
 
-@app.route("/metadata")
-def metadata():
-    return render_template('metadata.html')
+# @app.route("/metadata")
+# def metadata():
+#     return render_template('metadata.html')
