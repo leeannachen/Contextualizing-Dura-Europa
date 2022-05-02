@@ -13,7 +13,6 @@ import xml.etree.ElementTree as ET
 import os
 import sqlite3
 import pandas as pd
-import epidoc
 import sqlite3
 
 num = 1
@@ -37,6 +36,7 @@ Session(app)
 # # Make sure API key is set
 # if not os.environ.get("API_KEY"):
 #     raise RuntimeError("API_KEY not set")
+first = True
 
 @app.after_request
 def after_request(response):
@@ -82,29 +82,28 @@ def gate():
 @app.route("/temple", methods=["GET", "POST"])
 def temple():
     if request.method == "POST":
-        return render_template('metadata.html', translations=[{'image':"../static/images/Kaitlyn.jpeg", 'inscription':"Inscription",
-                                            'transcription': "Transcription", 'translation':"Translation",'source':"Translation Source", 'period': "Period", 'block':"Block" ,
-                                             'height':"Letter Height", 'bibliography':"Bibliography", 'app':"Apparatus",'notes':"Commentary"},
-                                            {'image': "../static/images/Kaitlyn.jpeg",
-                                            'inscription': "Inscription2",'transcription': "Transcription2",
-                                            'translation': "Translation2", 'source': "Translation Source2",
-                                            'period': "Period2", 'block': "Block2",
-                                            'height': "Letter Height2", 'bibliography': "Bibliography2",
-                                            'app': "Apparatus2", 'notes': "Commentary2"}
-                                            ])
+        global first
+        con = sqlite3.connect("temple.db")
+        cursor_object = con.cursor()
+        if first:
+            with open('temple.csv', 'r') as f:
+                df = pd.read_csv('temple.csv')
+                df.columns = df.columns.str.strip()
+                # df.to_sql("templeTable", con)
+                # con.close()
+            first = False
+        if request.method == "POST":
+            answer = cursor_object.execute("SELECT Translation FROM templeTable;")
+            results = []
+            for result in answer:
+                if result != None:
+                    if result != 'None':
+                        results.append(result)
+            print(results)
+        return render_template('metadata.html', translations=results)
     else:
-        return render_template('temple.html', translations=[{'image':"../static/images/Kaitlyn.jpeg", 'inscription':"Inscription",
-                                            'transcription': "Transcription", 'translation':"Translation",'source':"Translation Source", 'period': "Period", 'block':"Block" ,
-                                             'height':"Letter Height", 'bibliography':"Bibliography", 'app':"Apparatus",'notes':"Commentary"},
-                                            {'image': "../static/images/Kaitlyn.jpeg",
-                                            'inscription': "Inscription2",'transcription': "Transcription2",
-                                            'translation': "Translation2", 'source': "Translation Source2",
-                                            'period': "Period2", 'block': "Block2",
-                                            'height': "Letter Height2", 'bibliography': "Bibliography2",
-                                            'app': "Apparatus2", 'notes': "Commentary2"}
-                                            ])
-first = True
-@app.route("/metadata")
+        return render_template('temple.html', translations=[])
+@app.route("/metadata", methods=["GET", "POST"])
 def metadata():
     global first
     con = sqlite3.connect("temple.db")
@@ -117,7 +116,7 @@ def metadata():
             con.close()
         first = False
     if request.method == "POST":
-        answer = cursor_object.execute("SELECT * FROM templeTable WHERE Translation='';")
+        answer = cursor_object.execute("SELECT Translation FROM Temple;")
         print(answer)
         pass
     return render_template('metadata.html', translations=[{'image':"../static/images/Kaitlyn.jpeg", 'inscription':"Inscription",
