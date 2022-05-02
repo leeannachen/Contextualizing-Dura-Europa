@@ -6,9 +6,17 @@ from flask_session import Session
 from tempfile import mkdtemp
 from werkzeug.security import check_password_hash, generate_password_hash
 from helpers import apology, login_required, lookup, usd
+import csv
+import csv
+import requests
+import xml.etree.ElementTree as ET
+import os
+import sqlite3
+import pandas as pd
+import epidoc
+import sqlite3
 
-
-
+num = 1
 # Configure application
 app = Flask(__name__)
 
@@ -24,7 +32,7 @@ app.config["SESSION_TYPE"] = "filesystem"
 Session(app)
 
 # Configure CS50 Library to use SQLite database
-db = None#SQL("sqlite:///sample.db")
+# db = sqlite3("sqlite:///temple.db")
 
 # # Make sure API key is set
 # if not os.environ.get("API_KEY"):
@@ -71,12 +79,23 @@ def about():
 def gate():
     return render_template('gate.html')
 
-@app.route("/temple")
+@app.route("/temple",  methods=["GET", "POST"])
 def temple():
     return render_template('temple.html')
 
 @app.route("/metadata")
 def metadata():
+    if True:
+        con = sqlite3.connect("temple.db")
+        cursor_object = con.cursor()
+        with open('temple.csv', 'r') as f:
+            df = pd.read_csv('temple.csv')
+            df.columns = df.columns.str.strip()
+            df.to_sql("templeTable", con)
+            con.close()
+    if request.method == "POST":
+        # cursor_object.execute("SELECT * from geeks_demo")
+        pass
     return render_template('metadata.html', translations=[{'image':"../static/images/Kaitlyn.jpeg", 'inscription':"Inscription",
                                             'transcription': "Transcription", 'translation':"Translation",'source':"Translation Source", 'period': "Period", 'block':"Block" ,
                                              'height':"Letter Height", 'bibliography':"Bibliography", 'app':"Apparatus",'notes':"Commentary"},
