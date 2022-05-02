@@ -81,13 +81,12 @@ def metadata():
                                             'transcription': "Transcription", 'translation':"Translation",'source':"Translation Source", 'period': "Period", 'block':"Block" ,
                                              'height':"Letter Height", 'bibliography':"Bibliography", 'app':"Apparatus",'notes':"Commentary"},
                                             {'image': "../static/images/Kaitlyn.jpeg",
-                                            'inscription': "Inscription2",
-                                                           'transcription': "Transcription2",
-                                                           'translation': "Translation2", 'source': "Translation Source2",
-                                                           'period': "Period2", 'block': "Block2",
-                                                           'height': "Letter Height2", 'bibliography': "Bibliography2",
-                                                           'app': "Apparatus2", 'notes': "Commentary2"}
-                                                          ])
+                                            'inscription': "Inscription2",'transcription': "Transcription2",
+                                            'translation': "Translation2", 'source': "Translation Source2",
+                                            'period': "Period2", 'block': "Block2",
+                                            'height': "Letter Height2", 'bibliography': "Bibliography2",
+                                            'app': "Apparatus2", 'notes': "Commentary2"}
+                                            ])
 
 # @app.route("/metadata")
 # def metadata():

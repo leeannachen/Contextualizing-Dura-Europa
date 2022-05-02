@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block main %}
-    {% if error translations[0].image != "unknown" %}
+    {% if translations[0].image != "unknown" %}
         <a href="/metadata"><img alt="{{ top }}" class="border img-fluid" src="{{translations[0].image}}" title="{{ top }}"></a>
     {% endif %}
 
