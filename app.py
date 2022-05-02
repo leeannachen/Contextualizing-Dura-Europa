@@ -101,7 +101,7 @@ def temple():
     else:
         con = sqlite3.connect("translations.db")
         cursor_object = con.cursor()
-        answer = cursor_object.execute("SELECT No , Translation FROM temple;")
+        answer = cursor_object.execute("SELECT No , Inscription FROM temple;")
         results = []
         for result in answer:
             if result != None:
