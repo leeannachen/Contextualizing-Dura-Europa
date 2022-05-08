@@ -1,0 +1,7 @@
+#map {
+    width: 600px;
+    height: 650px;
+    background: rgba(225, 223, 223, 0.541);
+    border-radius: 10px;
+    border: 1px solid gray;
+}

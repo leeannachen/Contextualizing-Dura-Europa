@@ -1,3 +1,87 @@
+/* ZERO OUT EVERYTHING IN THE DOCUMENT*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* GLOBAL STYLING */
+body {
+    font-family: Arial;
+    font-weight: bold;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+#title {
+    text-align: center;
+    padding: 20px 10px 10px 10px;
+}
+
+/* GATE SECTION (INCLUDES LINK AND IMAGE) */
+#gate {
+    margin: 5px;
+}
+
+#gate-table {
+    margin: auto;
+}
+
+#gate-button {
+    background: gray;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    margin: 20px;
+}
+
+#gate-link {
+    background: gray;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    margin: 20px;
+    z-index: 1;
+}
+
+#gate-img {
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+/* TEMPLE SECTION (INCLUDES LINK AND IMAGE) */
+#temple {
+    margin: 5px;
+}
+
+#temple-table {
+    margin: auto;
+}
+
+#temple-button {
+    background: gray;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    margin: 20px;
+}
+
+#temple-link {
+    background: gray;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    margin: 20px;
+}
+
+#temple-img {
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+/* MAP FORMATTING */
 #map {
     position: absolute;
     top: 0;
