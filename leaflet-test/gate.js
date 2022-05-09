@@ -28,7 +28,8 @@ function myOnEachFeature(feature, layer) {
             "color": "#ff7800"
         })
     })
-    layer.bindPopup(feature.properties.name + "<br>" + feature.properties.text)
+    layer.bindPopup("Graffiti ID: " + feature.properties.name + 
+        "<br>" + feature.properties.text)
 }
 
 // COMBINE EVERYTHING TO LOAD IN GEOJSON FILE

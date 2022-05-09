@@ -18,9 +18,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D1 + D2",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -39,9 +38,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D5",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -60,9 +58,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D6",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -81,9 +78,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D3 + D4",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -102,9 +98,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D7",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -123,9 +118,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D8",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -144,9 +138,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "R17",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -164,10 +157,9 @@ export const myGeoJSON =
                 ]
             },
             "properties": {
-                    "name": "D9 + D12",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "name": "D9 + D10 + D11 + D12",
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -185,10 +177,9 @@ export const myGeoJSON =
                 ]
             },
             "properties": {
-                    "name": "18",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "name": "D13",
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -207,9 +198,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "S1 + D14 + D15",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -228,9 +218,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D16 + D17 + D18",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -249,9 +238,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D19",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -270,9 +258,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "R1",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -291,9 +278,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "R2 + R3 + R4",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -312,9 +298,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "R5 + R5a",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -333,9 +318,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D20",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -354,9 +338,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "R15",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -375,9 +358,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "R8 + R8a",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -396,9 +378,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "R9",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -416,10 +397,9 @@ export const myGeoJSON =
                 ]
             },
             "properties": {
-                    "name": "D22 + R3 + R6",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "name": "D22 + R6 + R7",
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -437,31 +417,9 @@ export const myGeoJSON =
                 ]
             },
             "properties": {
-                    "name": "R11 + R13",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
-                            </a>"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [-14.326171875000002, 7.792636130534623],
-                        [-13.101196289062502, 7.781751116696869],
-                        [-13.079223632812502, 7.0082158366633935],
-                        [-14.271240234375002, 7.046379130937713]
-                    ]
-                ]
-            },
-            "properties": {
-                    "name": "R12 + R13",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "name": "R10 + R11",
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -479,10 +437,9 @@ export const myGeoJSON =
                 ]
             },
             "properties": {
-                    "name": "R1a + R4a",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "name": "R11a + R11b",
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -500,10 +457,9 @@ export const myGeoJSON =
                 ]
             },
             "properties": {
-                    "name": "D28",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "name": "D23",
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -522,9 +478,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "R14",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -543,9 +498,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D24 + D25 + D26",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -564,9 +518,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D27 + D28",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -585,9 +538,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D29 + D30 + D31",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -606,9 +558,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D32",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -627,9 +578,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D33",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -648,9 +598,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D34",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -669,9 +618,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D35",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -690,9 +638,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "R12 + R13",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -711,9 +658,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D36",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -732,9 +678,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D37",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -753,9 +698,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D38",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -774,9 +718,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D39",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -795,9 +738,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D40",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -816,9 +758,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D41 + D43",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -837,9 +778,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D42",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -858,9 +798,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D44",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -879,9 +818,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D45",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -900,9 +838,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D46",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -921,9 +858,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D47",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -942,9 +878,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D48 + D49 + S2 + D50",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -963,9 +898,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "S3 + S4",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -984,9 +918,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D51 + D52",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -1005,9 +938,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D53",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -1026,9 +958,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D54",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -1047,9 +978,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D55",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -1068,9 +998,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D56",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -1089,9 +1018,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D57",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -1110,9 +1038,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D58",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -1131,9 +1058,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D59",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -1152,9 +1078,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D60",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -1173,9 +1098,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D61",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -1194,9 +1118,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D63",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -1215,9 +1138,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D62 + D64 + D65 + D66",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -1236,9 +1158,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D67",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -1257,9 +1178,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D68",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -1278,9 +1198,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D69",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -1299,9 +1218,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "S5",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -1326,9 +1244,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D134 + D135 IN DOOR-WAY",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -1347,9 +1264,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D104 + D105 + D106",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -1368,9 +1284,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D107 + D108 + D109",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -1389,9 +1304,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D130",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -1410,9 +1324,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D125",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -1433,9 +1346,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D128",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -1453,10 +1365,9 @@ export const myGeoJSON =
                 ]
             },
             "properties": {
-                    "name": "S8 + D124 + D123",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "name": "S8 + D123 + D124",
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -1474,10 +1385,9 @@ export const myGeoJSON =
                 ]
             },
             "properties": {
-                    "name": "D126 + D127 + D120",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "name": "D120 + D126 + D127",
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -1495,10 +1405,9 @@ export const myGeoJSON =
                 ]
             },
             "properties": {
-                    "name": "D129 + D121",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "name": "D121 + D129",
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -1517,9 +1426,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D119",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -1538,9 +1446,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D114 + D115",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -1559,9 +1466,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D116",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -1580,9 +1486,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D117",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -1601,9 +1506,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D115",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -1622,9 +1526,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "S7 + D113",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -1643,9 +1546,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D122",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -1664,9 +1566,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D112",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -1685,9 +1586,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D110 + D111",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -1706,9 +1606,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D101",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -1727,9 +1626,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D102",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -1748,9 +1646,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D103",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -1769,9 +1666,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D98 + D99",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -1790,9 +1686,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D100",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -1810,10 +1705,9 @@ export const myGeoJSON =
                 ]
             },
             "properties": {
-                    "name": "D136 D137 + D138 + D139 IN DOOR-WAY",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "name": "D136 + D137 + D138 + D139 IN DOOR-WAY",
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -1832,9 +1726,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D96",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -1853,9 +1746,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D97",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -1874,9 +1766,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "C8",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -1895,9 +1786,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D94",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -1916,9 +1806,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D95",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -1937,9 +1826,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D91",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -1958,9 +1846,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D92",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -1979,9 +1866,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D93",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -2000,9 +1886,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D77 + D78",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -2020,10 +1905,9 @@ export const myGeoJSON =
                 ]
             },
             "properties": {
-                    "name": "D88 + D79 + D80",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "name": "D79 + D80 + D88",
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -2042,9 +1926,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D82 + D83 + D84",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -2063,9 +1946,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D87 + D89",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -2084,9 +1966,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D90",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -2105,9 +1986,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D76",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -2126,9 +2006,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D81",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -2147,9 +2026,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D85 + D86 + D75",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -2168,9 +2046,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D70",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -2188,10 +2065,9 @@ export const myGeoJSON =
                 ]
             },
             "properties": {
-                    "name": "D182",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "name": "D132",
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -2210,10 +2086,9 @@ export const myGeoJSON =
                 ]
             },
             "properties": {
-                    "name": "D121",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "name": "D131",
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -2232,9 +2107,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "C3",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -2253,9 +2127,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "D71 + D72",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -2279,9 +2152,8 @@ export const myGeoJSON =
             },
             "properties": {
                     "name": "S6",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -2299,10 +2171,9 @@ export const myGeoJSON =
                 ]
             },
             "properties": {
-                    "name": "D72 + D74",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "name": "D73 + D74",
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -2320,10 +2191,9 @@ export const myGeoJSON =
                 ]
             },
             "properties": {
-                    "name": "D127 TACING CITY",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "name": "D133",
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         },
@@ -2341,10 +2211,9 @@ export const myGeoJSON =
                 ]
             },
             "properties": {
-                    "name": "D91",
-                    "text": "This is a sample popup <br> \
-                            <a href=\"./background.html\"> \
-                                Click this link to go a different page \
+                    "name": "D21",
+                    "text": "<a href=\"./background.html\"> \
+                                Click for more information. \
                             </a>"
             }
         }
