@@ -77,11 +77,9 @@ def about():
 @app.route("/gate", methods=["GET", "POST"])
 def gate():
     if request.method == "POST":
-        print('made it to post')
         con = sqlite3.connect("translations2.db")
         cursor_object = con.cursor()
         script = "SELECT * FROM gate WHERE No = ?"
-        print(str(request.form.get("block").strip()),)
         answer = cursor_object.execute(script, (str(request.form.get("block").strip()),))
         keys = ['', 'no','inscription', 'source', 'image', 'height', 'translation', 'period', 'notes', 'transcription',  'block' , 'bibliography', 'app']
         results = []
@@ -96,7 +94,6 @@ def gate():
                 dic[keys[i]] = 'No Result'
             dic['block'] = dic['source']
             results.append(dic)
-        print(results)
         return render_template('metadata.html', translations=results)
     else:
         con = sqlite3.connect("translations2.db")
