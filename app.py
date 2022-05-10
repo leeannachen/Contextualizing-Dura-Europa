@@ -86,8 +86,6 @@ def gate():
         keys = ['', 'no','inscription', 'source', 'image', 'height', 'translation', 'period', 'notes', 'transcription',  'block' , 'bibliography', 'app']
         results = []
         for info in answer:
-            print('info is')
-            print(info)
             i = 0
             dic = dict()
             for piece in info:
