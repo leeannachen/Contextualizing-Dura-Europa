@@ -118,15 +118,16 @@ def temple():
         cursor_object = con.cursor()
         script = "SELECT * FROM temple WHERE No = ?"
         answer = cursor_object.execute(script, (str(request.form.get("block").strip()),))
-        keys = ['', 'no','inscription', 'transcription','translation','source','image', 'period', 'block' ,'height', 'bibliography', 'app', 'notes']
+        keys = ['','no','inscription', 'transcription','translation','source','image', 'period', 'block' ,'height', 'bibliography', 'notes']
         results = []
         for info in answer:
-            print('info is')
-            print(info)
             i = 0
             dic = dict()
             for piece in info:
-                if i != 0:
+                if i == len(keys):
+                    break
+                if i > 1:
+                    print(keys[i], piece)
                     dic[keys[i]] = piece
                 i+=1
             results.append(dic)
