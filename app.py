@@ -127,7 +127,6 @@ def temple():
                 if i == len(keys):
                     break
                 if i > 1:
-                    print(keys[i], piece)
                     dic[keys[i]] = piece
                 i+=1
             results.append(dic)
